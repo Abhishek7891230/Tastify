@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer components {
+  .card {
+    @apply bg-white rounded-2xl shadow-md p-4 hover:shadow-lg transition;
+  }
+
+  .title {
+    @apply text-xl font-semibold text-gray-800 mb-2;
+  }
+
+  .desc {
+    @apply text-gray-600;
+  }
+
+  @keyframes bounce-slow {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-bounce-slow {
+    animation: bounce-slow 3s infinite ease-in-out;
+  }
+
+  @layer utilities {
+    .clip-diagonal {
+      clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    }
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}

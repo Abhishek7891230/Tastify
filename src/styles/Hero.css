@@ -1,0 +1,19 @@
+@import "../index.css" reference;
+
+@layer components {
+  .clip-diagonal {
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .diagonal-part {
+    @apply absolute inset-0 bg-lime-400;
+  }
+
+  .floating-img {
+    @apply absolute right-12 bottom-10 w-64 md:w-[420px] drop-shadow-2xl;
+  }
+}

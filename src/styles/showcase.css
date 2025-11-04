@@ -1,0 +1,75 @@
+@import "../index.css" reference;
+
+@layer components {
+  .showcase-root {
+    @apply relative;
+  }
+
+  .showcase-headline {
+    @apply text-center fixed top-[25vh] left-[8vw] z-30 max-w-[600px] text-left;
+
+    animation: headline-scroll linear forwards;
+    animation-timeline: scroll();
+    animation-range: 20vh 50vh;
+  }
+
+  @keyframes headline-scroll {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100px);
+      pointer-events: none;
+    }
+  }
+
+  .showcase-title {
+    @apply text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight text-indigo-500 drop-shadow-sm;
+  }
+
+  .showcase-subtitle {
+    @apply text-lg md:text-lg text-indigo-500 font-semibold mt-4;
+  }
+
+  .showcase-btn {
+    @apply px-8 py-3 bg-white text-green-600 font-bold rounded-full shadow-lg hover:bg-green-100 transition;
+  }
+
+  .showcase-cards-container {
+    @apply relative z-20;
+
+    animation: cards-scroll linear forwards;
+    animation-timeline: scroll();
+    animation-range: 10vh 40vh;
+  }
+
+  @keyframes cards-scroll {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .showcase-card {
+    @apply bg-white rounded-2xl shadow-xl p-6 flex flex-col items-center justify-center hover:scale-105 transition-transform cursor-pointer;
+    min-height: 170px;
+  }
+
+  .showcase-img {
+    @apply w-20 h-20 object-contain;
+  }
+
+  .showcase-name {
+    @apply font-semibold text-gray-700;
+  }
+
+  .lower-section {
+    @apply relative bg-white text-gray-900 py-32 px-[10vw] overflow-hidden;
+  }
+}
