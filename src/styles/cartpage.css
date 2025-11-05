@@ -1,0 +1,103 @@
+@import "../index.css";
+
+@layer components {
+  .cartpage-wrapper {
+    @apply min-h-screen bg-gray-50 pt-20 pb-16;
+  }
+
+  .cartpage-header {
+    @apply text-center py-6;
+  }
+
+  .yourcart-title {
+    @apply text-3xl md:text-4xl font-bold text-gray-800;
+  }
+
+  .cartpage-container {
+    @apply flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto px-4 md:px-8;
+  }
+
+  .cart-section {
+    @apply flex-1;
+  }
+
+  .cart-items-box {
+    @apply bg-white rounded-lg border border-gray-200;
+  }
+
+  .cart-item-row {
+    @apply flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 p-5;
+  }
+
+  .cart-item-details {
+    @apply flex-1;
+  }
+
+  .cart-item-name {
+    @apply font-semibold text-lg text-gray-800 mb-1;
+  }
+
+  .cart-item-price {
+    @apply text-gray-600 text-sm;
+  }
+
+  .cart-item-actions {
+    @apply flex items-center gap-4;
+  }
+
+  .cart-quantity-controls {
+    @apply flex items-center gap-3 border border-gray-300 rounded-lg px-3 py-1;
+  }
+
+  .qty-btn {
+    @apply text-green-600 hover:text-green-700 font-bold text-lg transition w-6 h-6 flex items-center justify-center;
+  }
+
+  .qty-count {
+    @apply font-semibold text-gray-800 min-w-[20px] text-center;
+  }
+
+  .delete-btn {
+    @apply text-red-500 hover:text-red-600 font-medium text-sm transition cursor-pointer;
+  }
+
+  .cart-divider {
+    @apply border-t border-gray-200;
+  }
+
+  .payment-summary {
+    @apply w-full lg:w-96 bg-white rounded-lg border border-gray-200 p-6 h-fit lg:sticky lg:top-24;
+  }
+
+  .summary-title {
+    @apply text-xl font-bold mb-4 text-gray-800;
+  }
+
+  .summary-line {
+    @apply flex justify-between py-3 text-gray-700;
+  }
+
+  .summary-divider {
+    @apply border-t border-gray-300 my-2;
+  }
+
+  .total-line {
+    @apply font-bold text-lg text-gray-900;
+  }
+
+  .placeorder-btn {
+    @apply mt-6 w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-green-700 cursor-pointer transition;
+  }
+
+  .empty-cart {
+    @apply text-center text-gray-600 text-xl pt-40 font-medium;
+  }
+
+  .backto-menupage-btn {
+    @apply text-white font-semibold bg-black hover:bg-gray-800 px-6 py-3 cursor-pointer rounded-full shadow-sm transition-all duration-200 active:scale-95;
+  }
+
+  .backto-menu-div {
+    @apply flex justify-center mt-7;
+  }
+}

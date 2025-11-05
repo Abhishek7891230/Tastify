@@ -1,8 +1,10 @@
 import { useState } from "react";
 import "../styles/navbar.css";
+import { useNavigate } from "react-router-dom";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav className="navbar">
@@ -55,7 +57,7 @@ export function Navbar() {
         >
           GitHub Repo
         </a>
-        <div className="navbar-cart">
+        <div className="navbar-cart" onClick={() => navigate("/cart")}>
           <svg
             width="18"
             height="18"
@@ -70,7 +72,7 @@ export function Navbar() {
               strokeLinejoin="round"
             />
           </svg>
-          <button className="navbar-cart-badge"></button>
+          <button className="navbar-cart-badge">3</button>
         </div>
 
         <button className="navbar-btn">Login</button>
