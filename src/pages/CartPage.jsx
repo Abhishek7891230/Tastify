@@ -11,6 +11,9 @@ export function CartPage() {
     0
   );
 
+  const deliveryFee = total >= 500 ? 0 : 40;
+  const finalTotal = total + deliveryFee;
+
   if (cart.length === 0)
     return (
       <>
@@ -78,22 +81,31 @@ export function CartPage() {
         </div>
 
         <div className="payment-summary">
-          <h2 className="summary-title">Bill Details</h2>
+          <h2 className="summary-title">Payment Details</h2>
 
           <div className="summary-line">
-            <span>Item Total</span>
+            <span>Total item price</span>
             <span>₹{total}</span>
           </div>
           <div className="summary-line">
             <span>Delivery Fee</span>
-            <span>₹{total > 0 ? 40 : 0}</span>
+            <span>
+              {total >= 500 ? (
+                <>
+                  <span className="delivery-fee-scratched">₹40</span>
+                  <span className="ml-2">₹0</span>
+                </>
+              ) : (
+                <span>₹{deliveryFee}</span>
+              )}
+            </span>
           </div>
 
           <div className="summary-divider"></div>
 
           <div className="summary-line total-line">
-            <span>To Pay</span>
-            <span>₹{total > 0 ? total + 40 : 0}</span>
+            <span>Total amount</span>
+            <span>₹{finalTotal}</span>
           </div>
 
           <button className="placeorder-btn">Place order</button>

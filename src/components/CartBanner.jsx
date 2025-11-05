@@ -16,7 +16,7 @@ export function CartBanner() {
   return (
     <div className="fixed bottom-4 left-1/2 -translate-x-1/2 w-[90%] md:w-[60%] bg-black text-white px-6 py-3 rounded-full shadow-lg flex justify-between items-center z-50">
       <span className="text-sm md:text-base">
-        {totalItems} item{totalItems > 1 ? "s" : ""} added to cart 🛒
+        {totalItems} item{totalItems > 1 ? "s" : ""} added to cart
       </span>
       <button
         onClick={() => navigate("/cart")}

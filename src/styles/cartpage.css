@@ -100,4 +100,8 @@
   .backto-menu-div {
     @apply flex justify-center mt-7;
   }
+
+  .delivery-fee-scratched {
+    @apply line-through text-gray-400;
+  }
 }

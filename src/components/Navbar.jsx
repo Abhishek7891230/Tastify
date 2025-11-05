@@ -4,7 +4,21 @@ import { useNavigate } from "react-router-dom";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
+
+  const handleSearch = () => {
+    if (searchQuery.trim()) {
+      navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+      setSearchQuery("");
+    }
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
 
   return (
     <nav className="navbar">
@@ -22,6 +36,9 @@ export function Navbar() {
           className="navbar-input"
           type="text"
           placeholder="Search your meal"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          onKeyPress={handleKeyPress}
         />
         <svg
           width="16"
@@ -29,6 +46,8 @@ export function Navbar() {
           viewBox="0 0 16 16"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          onClick={handleSearch}
+          className="cursor-pointer"
         >
           <path
             d="M10.836 10.615 15 14.695"

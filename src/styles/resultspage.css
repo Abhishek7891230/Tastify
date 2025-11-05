@@ -1,0 +1,43 @@
+@import "../index.css";
+
+@layer components {
+  .search-results-header {
+    @apply text-center py-6 mb-8;
+  }
+
+  .search-results-title {
+    @apply text-3xl md:text-4xl font-bold text-gray-800 mb-2;
+  }
+
+  .search-results-count {
+    @apply text-gray-600 text-lg;
+  }
+
+  .search-no-results {
+    @apply text-center py-16 px-4;
+  }
+
+  .search-no-results-text {
+    @apply text-xl md:text-2xl font-semibold text-gray-800 mb-2;
+  }
+
+  .search-no-results-hint {
+    @apply text-gray-600 mb-6;
+  }
+
+  .search-back-btn {
+    @apply bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition cursor-pointer;
+  }
+
+  .search-loading-container {
+    @apply min-h-screen bg-gray-50 pt-20 pb-16 flex flex-col items-center justify-center px-4;
+  }
+
+  .search-spinner {
+    @apply w-12 h-12 border-4 border-gray-200 border-t-indigo-600 rounded-full animate-spin mb-4;
+  }
+
+  .search-loading-text {
+    @apply text-lg text-gray-700 font-medium;
+  }
+}

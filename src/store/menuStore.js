@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
+import { getAllMenuItems as getMenuItems } from "../data/menuData";
 
 export const useMenuStore = create(
   persist(
@@ -8,6 +9,8 @@ export const useMenuStore = create(
       setCategory: (category) => set({ selectedCategory: category }),
 
       cart: [],
+
+      getAllMenuItems: getMenuItems,
 
       addToCart: (item) =>
         set((state) => {
