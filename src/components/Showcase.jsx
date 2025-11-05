@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import "../styles/showcase.css";
 
 export function Showcase() {
+  const navigate = useNavigate();
+
   const foods = [
     {
       name: "Biryani",
@@ -32,7 +35,10 @@ export function Showcase() {
         </h1>
         <p className="showcase-subtitle">Food made to match your moment</p>
         <div className="mt-6">
-          <button className="showcase-btn text-lg md:text-xl font-bold">
+          <button
+            className="showcase-btn text-lg md:text-xl font-bold"
+            onClick={() => navigate("/menu")}
+          >
             Grab a Bite <span className="inline-block text-2xl ml-1">→</span>
           </button>
         </div>
@@ -41,7 +47,7 @@ export function Showcase() {
       <div className="h-[120vh]"></div>
 
       <div className="showcase-cards-container px-6 py-12">
-        <p className="mb-4 ml-7 font-bold">Discover →</p>
+        <p className="mb-4 ml-7 font-bold">What's on your mind ?</p>
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-6 py-8">
           {foods.map((food, idx) => (
             <div
@@ -79,7 +85,10 @@ export function Showcase() {
               From freshly baked pizzas to smooth, rich desserts, our menu is
               made to delight and delivered quickly — every time, with care.
             </p>
-            <button className="bg-black z-10 text-white cursor-pointer px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transition-all duration-300">
+            <button
+              className="bg-black z-10 text-white cursor-pointer px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transition-all duration-300"
+              onClick={() => navigate("/menu")}
+            >
               Explore the Menu 🍕
             </button>
           </div>
