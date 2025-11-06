@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import { getAllMenuItems as getMenuItems } from "../data/menuData";
+import { fetchProducts } from "../api/client";
 
 export const useMenuStore = create(
   persist(
@@ -12,7 +12,9 @@ export const useMenuStore = create(
       orders: [],
       currentOrder: null,
 
-      getAllMenuItems: getMenuItems,
+      getAllMenuItems: async () => {
+        return await fetchProducts();
+      },
 
       addToCart: (item) =>
         set((state) => {

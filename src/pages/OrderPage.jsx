@@ -1,10 +1,30 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMenuStore } from "../store/menuStore";
 import "../styles/orderspage.css";
 
 export function OrdersPage() {
-  const { orders, currentOrder } = useMenuStore();
+  const { orders, currentOrder, updateOrderStatus } = useMenuStore();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const checkAndUpdateStatuses = () => {
+      const now = Date.now();
+      const fiveMinutes = 5 * 60 * 1000;
+      orders.forEach((order) => {
+        if (order.status !== "delivered") {
+          const placedAt = new Date(order.orderDate).getTime();
+          if (now - placedAt >= fiveMinutes) {
+            updateOrderStatus(order.id, "delivered");
+          }
+        }
+      });
+    };
+
+    checkAndUpdateStatuses();
+    const id = setInterval(checkAndUpdateStatuses, 30000);
+    return () => clearInterval(id);
+  }, [orders, updateOrderStatus]);
 
   const getStatusColor = (status) => {
     switch (status) {

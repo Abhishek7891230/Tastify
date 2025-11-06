@@ -17,19 +17,30 @@ export function SearchResultsPage() {
   const { ensureLoggedIn } = useAuth();
 
   useEffect(() => {
+    let mounted = true;
     if (!query) {
       navigate("/menu");
       return;
     }
 
     setLoading(true);
+    (async () => {
+      try {
+        const [allItems] = await Promise.all([
+          getAllMenuItems(),
+          new Promise((resolve) => setTimeout(resolve, 1000)),
+        ]);
+        if (!mounted) return;
+        const searchResults = fuzzySearch(query, allItems);
+        setResults(searchResults);
+      } finally {
+        if (mounted) setLoading(false);
+      }
+    })();
 
-    setTimeout(() => {
-      const allItems = getAllMenuItems();
-      const searchResults = fuzzySearch(query, allItems);
-      setResults(searchResults);
-      setLoading(false);
-    }, 1000);
+    return () => {
+      mounted = false;
+    };
   }, [query, navigate, getAllMenuItems]);
 
   const fuzzySearch = (searchTerm, items) => {

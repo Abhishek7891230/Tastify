@@ -1,0 +1,570 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Chicken Biryani",
+      "price": 249,
+      "category": "non-veg",
+      "description": "Aromatic basmati rice with tender chicken pieces",
+      "img": "https://i.imgur.com/1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mutton Biryani",
+      "price": 349,
+      "category": "non-veg",
+      "description": "Slow-cooked mutton with fragrant spices",
+      "img": "https://i.imgur.com/2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Egg Curry",
+      "price": 149,
+      "category": "non-veg",
+      "description": "Boiled eggs cooked in spicy curry",
+      "img": "https://i.imgur.com/3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Butter Chicken",
+      "price": 299,
+      "category": "non-veg",
+      "description": "Creamy tomato gravy with juicy chicken",
+      "img": "https://i.imgur.com/4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Chicken Tikka",
+      "price": 199,
+      "category": "non-veg",
+      "description": "Chicken pieces marinated and grilled",
+      "img": "https://i.imgur.com/5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Fish Curry",
+      "price": 259,
+      "category": "non-veg",
+      "description": "Tangy, spicy coastal-style curry",
+      "img": "https://i.imgur.com/6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Prawns Fry",
+      "price": 299,
+      "category": "non-veg",
+      "description": "Crispy fried prawns with spices",
+      "img": "https://i.imgur.com/7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Chicken Shawarma",
+      "price": 150,
+      "category": "non-veg",
+      "description": "Middle Eastern style wrap with chicken",
+      "img": "https://i.imgur.com/8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Mutton Korma",
+      "price": 329,
+      "category": "non-veg",
+      "description": "Rich Mughlai style gravy",
+      "img": "https://i.imgur.com/9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Chicken Lollipop",
+      "price": 180,
+      "category": "non-veg",
+      "description": "Crispy fried chicken lollipops",
+      "img": "https://i.imgur.com/10.jpg"
+    },
+
+    {
+      "id": 11,
+      "name": "Paneer Butter Masala",
+      "price": 229,
+      "category": "veg",
+      "description": "Rich creamy paneer gravy",
+      "img": "https://i.imgur.com/11.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Veg Biryani",
+      "price": 199,
+      "category": "veg",
+      "description": "Flavourful biryani with vegetables",
+      "img": "https://i.imgur.com/12.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Aloo Gobi",
+      "price": 120,
+      "category": "veg",
+      "description": "Potato and cauliflower curry",
+      "img": "https://i.imgur.com/13.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Veg Pulao",
+      "price": 150,
+      "category": "veg",
+      "description": "Simple aromatic rice dish",
+      "img": "https://i.imgur.com/14.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Dal Makhani",
+      "price": 180,
+      "category": "veg",
+      "description": "Creamy Punjabi dal",
+      "img": "https://i.imgur.com/15.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Masala Dosa",
+      "price": 90,
+      "category": "veg",
+      "description": "South Indian dosa with potato filling",
+      "img": "https://i.imgur.com/16.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Idli Sambar",
+      "price": 70,
+      "category": "veg",
+      "description": "Soft idlis with sambar",
+      "img": "https://i.imgur.com/17.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Chole Bhature",
+      "price": 140,
+      "category": "veg",
+      "description": "Spicy chickpeas with fried bhature",
+      "img": "https://i.imgur.com/18.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Palak Paneer",
+      "price": 210,
+      "category": "veg",
+      "description": "Spinach gravy with paneer",
+      "img": "https://i.imgur.com/19.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Kadhai Paneer",
+      "price": 220,
+      "category": "veg",
+      "description": "Paneer cooked with bell peppers",
+      "img": "https://i.imgur.com/20.jpg"
+    },
+
+    {
+      "id": 21,
+      "name": "Veg Manchurian",
+      "price": 160,
+      "category": "chinese",
+      "description": "Veg balls in Manchurian sauce",
+      "img": "https://i.imgur.com/21.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Chicken Fried Rice",
+      "price": 190,
+      "category": "chinese",
+      "description": "Classic Indo-Chinese rice",
+      "img": "https://i.imgur.com/22.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Hakka Noodles",
+      "price": 150,
+      "category": "chinese",
+      "description": "Stir fried noodles with veggies",
+      "img": "https://i.imgur.com/23.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Chilli Chicken",
+      "price": 220,
+      "category": "chinese",
+      "description": "Fried chicken tossed in chilli sauce",
+      "img": "https://i.imgur.com/24.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Veg Fried Rice",
+      "price": 140,
+      "category": "chinese",
+      "description": "Fried rice with veggies",
+      "img": "https://i.imgur.com/25.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Chicken Noodles",
+      "price": 180,
+      "category": "chinese",
+      "description": "Noodles with chicken strips",
+      "img": "https://i.imgur.com/26.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Paneer Chilli",
+      "price": 170,
+      "category": "chinese",
+      "description": "Crispy paneer tossed in chilli sauce",
+      "img": "https://i.imgur.com/27.jpg"
+    },
+    {
+      "id": 28,
+      "name": "Chicken Momos",
+      "price": 120,
+      "category": "chinese",
+      "description": "Steamed flour dumplings",
+      "img": "https://i.imgur.com/28.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Veg Momos",
+      "price": 100,
+      "category": "chinese",
+      "description": "Steamed dumplings with veg stuffing",
+      "img": "https://i.imgur.com/29.jpg"
+    },
+    {
+      "id": 30,
+      "name": "Schezwan Noodles",
+      "price": 160,
+      "category": "chinese",
+      "description": "Spicy Indo-Chinese noodles",
+      "img": "https://i.imgur.com/30.jpg"
+    },
+
+    {
+      "id": 31,
+      "name": "Samosa",
+      "price": 20,
+      "category": "snacks",
+      "description": "Deep-fried pastry with potato filling",
+      "img": "https://i.imgur.com/31.jpg"
+    },
+    {
+      "id": 32,
+      "name": "Pani Puri",
+      "price": 40,
+      "category": "snacks",
+      "description": "Crispy puris with flavored water",
+      "img": "https://i.imgur.com/32.jpg"
+    },
+    {
+      "id": 33,
+      "name": "Vada Pav",
+      "price": 30,
+      "category": "snacks",
+      "description": "Mumbai street-style snack",
+      "img": "https://i.imgur.com/33.jpg"
+    },
+    {
+      "id": 34,
+      "name": "Spring Rolls",
+      "price": 70,
+      "category": "snacks",
+      "description": "Crispy rolls stuffed with veggies",
+      "img": "https://i.imgur.com/34.jpg"
+    },
+    {
+      "id": 35,
+      "name": "Kachori",
+      "price": 25,
+      "category": "snacks",
+      "description": "Flaky fried snack",
+      "img": "https://i.imgur.com/35.jpg"
+    },
+    {
+      "id": 36,
+      "name": "Onion Pakoda",
+      "price": 50,
+      "category": "snacks",
+      "description": "Onions fried with chickpea flour",
+      "img": "https://i.imgur.com/36.jpg"
+    },
+    {
+      "id": 37,
+      "name": "Bread Omelette",
+      "price": 60,
+      "category": "snacks",
+      "description": "Street style omelette with bread",
+      "img": "https://i.imgur.com/37.jpg"
+    },
+    {
+      "id": 38,
+      "name": "Aloo Tikki",
+      "price": 30,
+      "category": "snacks",
+      "description": "Fried potato patties",
+      "img": "https://i.imgur.com/38.jpg"
+    },
+    {
+      "id": 39,
+      "name": "Cutlet",
+      "price": 35,
+      "category": "snacks",
+      "description": "Crispy veg cutlet",
+      "img": "https://i.imgur.com/39.jpg"
+    },
+    {
+      "id": 40,
+      "name": "Chicken Popcorn",
+      "price": 120,
+      "category": "snacks",
+      "description": "Small crispy chicken chunks",
+      "img": "https://i.imgur.com/40.jpg"
+    },
+
+    {
+      "id": 41,
+      "name": "Margherita Pizza",
+      "price": 299,
+      "category": "pizza",
+      "description": "Classic mozzarella pizza",
+      "img": "https://i.imgur.com/41.jpg"
+    },
+    {
+      "id": 42,
+      "name": "Farmhouse Pizza",
+      "price": 399,
+      "category": "pizza",
+      "description": "Loaded with veggie toppings",
+      "img": "https://i.imgur.com/42.jpg"
+    },
+    {
+      "id": 43,
+      "name": "Pepperoni Pizza",
+      "price": 449,
+      "category": "pizza",
+      "description": "Topped with spicy pepperoni slices",
+      "img": "https://i.imgur.com/43.jpg"
+    },
+    {
+      "id": 44,
+      "name": "Chicken BBQ Pizza",
+      "price": 429,
+      "category": "pizza",
+      "description": "BBQ chicken with cheese",
+      "img": "https://i.imgur.com/44.jpg"
+    },
+    {
+      "id": 45,
+      "name": "Cheese Burst Pizza",
+      "price": 499,
+      "category": "pizza",
+      "description": "Loaded cheese-filled crust",
+      "img": "https://i.imgur.com/45.jpg"
+    },
+    {
+      "id": 46,
+      "name": "Paneer Tikka Pizza",
+      "price": 379,
+      "category": "pizza",
+      "description": "Paneer toppings with spicy sauce",
+      "img": "https://i.imgur.com/46.jpg"
+    },
+    {
+      "id": 47,
+      "name": "Veggie Delight Pizza",
+      "price": 359,
+      "category": "pizza",
+      "description": "Loaded with colorful veggies",
+      "img": "https://i.imgur.com/47.jpg"
+    },
+    {
+      "id": 48,
+      "name": "Mushroom Pizza",
+      "price": 389,
+      "category": "pizza",
+      "description": "Topped with fresh mushrooms",
+      "img": "https://i.imgur.com/48.jpg"
+    },
+    {
+      "id": 49,
+      "name": "Double Cheese Pizza",
+      "price": 420,
+      "category": "pizza",
+      "description": "Extra layer of cheese",
+      "img": "https://i.imgur.com/49.jpg"
+    },
+    {
+      "id": 50,
+      "name": "Garlic Bread Pizza",
+      "price": 279,
+      "category": "pizza",
+      "description": "Garlic bread infused pizza",
+      "img": "https://i.imgur.com/50.jpg"
+    },
+
+    {
+      "id": 51,
+      "name": "Chicken Wrap",
+      "price": 150,
+      "category": "snacks",
+      "description": "Chicken wrap with mayo",
+      "img": "https://i.imgur.com/51.jpg"
+    },
+    {
+      "id": 52,
+      "name": "Paneer Wrap",
+      "price": 130,
+      "category": "snacks",
+      "description": "Paneer stuffed wrap",
+      "img": "https://i.imgur.com/52.jpg"
+    },
+    {
+      "id": 53,
+      "name": "Veg Sandwich",
+      "price": 90,
+      "category": "snacks",
+      "description": "Simple veg sandwich",
+      "img": "https://i.imgur.com/53.jpg"
+    },
+    {
+      "id": 54,
+      "name": "Chicken Sandwich",
+      "price": 140,
+      "category": "snacks",
+      "description": "Chicken sandwich with veggies",
+      "img": "https://i.imgur.com/54.jpg"
+    },
+    {
+      "id": 55,
+      "name": "French Fries",
+      "price": 80,
+      "category": "snacks",
+      "description": "Crispy potato fries",
+      "img": "https://i.imgur.com/55.jpg"
+    },
+    {
+      "id": 56,
+      "name": "Peri Peri Fries",
+      "price": 100,
+      "category": "snacks",
+      "description": "Spicy fries with peri peri",
+      "img": "https://i.imgur.com/56.jpg"
+    },
+    {
+      "id": 57,
+      "name": "Chole Kulche",
+      "price": 120,
+      "category": "veg",
+      "description": "North Indian street food",
+      "img": "https://i.imgur.com/57.jpg"
+    },
+    {
+      "id": 58,
+      "name": "Rajma Chawal",
+      "price": 130,
+      "category": "veg",
+      "description": "Comfort meal with rajma and rice",
+      "img": "https://i.imgur.com/58.jpg"
+    },
+    {
+      "id": 59,
+      "name": "Pav Bhaji",
+      "price": 140,
+      "category": "veg",
+      "description": "Spicy mashed veg curry",
+      "img": "https://i.imgur.com/59.jpg"
+    },
+    {
+      "id": 60,
+      "name": "Veg Kurma",
+      "price": 160,
+      "category": "veg",
+      "description": "Mixed veg curry in coconut gravy",
+      "img": "https://i.imgur.com/60.jpg"
+    },
+
+    {
+      "id": 61,
+      "name": "Chicken Keema",
+      "price": 220,
+      "category": "non-veg",
+      "description": "Minced chicken cooked with spices",
+      "img": "https://i.imgur.com/61.jpg"
+    },
+    {
+      "id": 62,
+      "name": "Fish Biryani",
+      "price": 320,
+      "category": "non-veg",
+      "description": "Hyderabadi style fish biryani",
+      "img": "https://i.imgur.com/62.jpg"
+    },
+    {
+      "id": 63,
+      "name": "Egg Fried Rice",
+      "price": 160,
+      "category": "chinese",
+      "description": "Fried rice with scrambled eggs",
+      "img": "https://i.imgur.com/63.jpg"
+    },
+    {
+      "id": 64,
+      "name": "Veg Pizza Slice",
+      "price": 60,
+      "category": "pizza",
+      "description": "Single slice veg pizza",
+      "img": "https://i.imgur.com/64.jpg"
+    },
+    {
+      "id": 65,
+      "name": "Chicken Pizza Slice",
+      "price": 80,
+      "category": "pizza",
+      "description": "Chicken pizza slice",
+      "img": "https://i.imgur.com/65.jpg"
+    },
+    {
+      "id": 66,
+      "name": "Ghee Roast Dosa",
+      "price": 110,
+      "category": "veg",
+      "description": "Crispy dosa roasted in ghee",
+      "img": "https://i.imgur.com/66.jpg"
+    },
+    {
+      "id": 67,
+      "name": "Veg Thali",
+      "price": 180,
+      "category": "veg",
+      "description": "Full Indian thali meal",
+      "img": "https://i.imgur.com/67.jpg"
+    },
+    {
+      "id": 68,
+      "name": "Chicken Thali",
+      "price": 230,
+      "category": "non-veg",
+      "description": "Non-veg thali with chicken curry",
+      "img": "https://i.imgur.com/68.jpg"
+    },
+    {
+      "id": 69,
+      "name": "Chinese Combo",
+      "price": 250,
+      "category": "chinese",
+      "description": "Noodles + fried rice + chilli paneer",
+      "img": "https://i.imgur.com/69.jpg"
+    },
+    {
+      "id": 70,
+      "name": "Veg Combo Meal",
+      "price": 200,
+      "category": "veg",
+      "description": "Thali with rice, dal, sabzi, roti",
+      "img": "https://i.imgur.com/70.jpg"
+    }
+  ]
+}
