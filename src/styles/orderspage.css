@@ -1,0 +1,134 @@
+@import "../index.css";
+
+@layer components {
+  .orders-wrapper {
+    @apply min-h-screen bg-gray-50 pt-20 pb-12;
+  }
+
+  .orders-header {
+    @apply container mx-auto px-4 md:px-8 py-6;
+  }
+
+  .orders-title {
+    @apply text-3xl font-bold text-gray-800;
+  }
+
+  .orders-container {
+    @apply container mx-auto px-4 md:px-8 space-y-8;
+  }
+
+  .empty-orders {
+    @apply flex flex-col items-center justify-center py-20 text-center;
+  }
+
+  .empty-orders p {
+    @apply text-xl text-gray-600 mb-6;
+  }
+
+  .order-now-btn {
+    @apply px-8 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition-colors;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold text-gray-800 mb-4;
+  }
+
+  .current-order-section,
+  .previous-orders-section {
+    @apply mb-8;
+  }
+
+  .orders-list {
+    @apply space-y-4;
+  }
+
+  .order-card {
+    @apply bg-white rounded-xl shadow-md p-6 transition-shadow hover:shadow-lg;
+  }
+
+  .order-card.current {
+    @apply border-2 border-indigo-500 shadow-xl;
+  }
+
+  .order-header {
+    @apply flex justify-between items-start mb-4 pb-4 border-b border-gray-200;
+  }
+
+  .order-id {
+    @apply text-lg font-bold text-gray-800;
+  }
+
+  .order-date {
+    @apply text-sm text-gray-500 mt-1;
+  }
+
+  .order-status {
+    @apply px-4 py-1 rounded-full text-sm font-semibold;
+  }
+
+  .status-preparing {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+
+  .status-delivering {
+    @apply bg-blue-100 text-blue-800;
+  }
+
+  .status-delivered {
+    @apply bg-green-100 text-green-800;
+  }
+
+  .order-items {
+    @apply space-y-3 mb-4;
+  }
+
+  .order-item {
+    @apply flex justify-between items-center text-gray-700;
+  }
+
+  .item-name {
+    @apply font-medium;
+  }
+
+  .item-price {
+    @apply text-gray-600;
+  }
+
+  .order-summary {
+    @apply space-y-2 pt-4 border-t border-gray-200;
+  }
+
+  .summary-row {
+    @apply flex justify-between items-center text-gray-700;
+  }
+
+  .summary-row.total {
+    @apply text-lg font-bold text-gray-900 pt-2 border-t border-gray-300;
+  }
+
+  .delivery-info {
+    @apply mt-4 p-3 bg-indigo-50 rounded-lg;
+  }
+
+  .delivery-text {
+    @apply text-sm text-indigo-800 font-medium;
+  }
+
+  @media (max-width: 768px) {
+    .orders-title {
+      @apply text-2xl;
+    }
+
+    .section-title {
+      @apply text-xl;
+    }
+
+    .order-card {
+      @apply p-4;
+    }
+
+    .order-id {
+      @apply text-base;
+    }
+  }
+}

@@ -5,6 +5,7 @@ import "../styles/resultspage.css";
 import "../styles/menupage.css";
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
+import { useAuth } from "../contexts/AuthContext";
 
 export function SearchResultsPage() {
   const [searchParams] = useSearchParams();
@@ -13,6 +14,7 @@ export function SearchResultsPage() {
   const [results, setResults] = useState([]);
   const navigate = useNavigate();
   const { addToCart, getAllMenuItems } = useMenuStore();
+  const { ensureLoggedIn } = useAuth();
 
   useEffect(() => {
     if (!query) {
@@ -75,6 +77,7 @@ export function SearchResultsPage() {
   };
 
   const handleAddToCart = (item) => {
+    if (!ensureLoggedIn()) return;
     addToCart(item);
   };
 

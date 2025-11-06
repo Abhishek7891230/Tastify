@@ -1,10 +1,12 @@
 import { useMenuStore } from "../store/menuStore";
 import { useLocation, useNavigate } from "react-router-dom";
+import { useAuth } from "../contexts/AuthContext";
 
 export function CartBanner() {
   const cart = useMenuStore((state) => state.cart);
   const location = useLocation();
   const navigate = useNavigate();
+  const { ensureLoggedIn } = useAuth();
 
   const hiddenPages = ["/login", "/payment", "/cart"];
   const isHidden = hiddenPages.includes(location.pathname);
@@ -19,7 +21,10 @@ export function CartBanner() {
         {totalItems} item{totalItems > 1 ? "s" : ""} added to cart
       </span>
       <button
-        onClick={() => navigate("/cart")}
+        onClick={() => {
+          if (!ensureLoggedIn()) return;
+          navigate("/cart");
+        }}
         className="bg-white text-black font-semibold px-4 py-1 rounded-full hover:bg-gray-200 transition"
       >
         View Cart →

@@ -1,6 +1,7 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState, useCallback } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../firebase/config";
+import { LoginPopup } from "../components/Login";
 
 const AuthContext = createContext();
 
@@ -16,6 +17,7 @@ export function useAuth() {
 export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [showLogin, setShowLogin] = useState(false);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -30,14 +32,35 @@ export function AuthProvider({ children }) {
     await signOut(auth);
   };
 
+  const openLogin = useCallback(() => setShowLogin(true), []);
+  const closeLogin = useCallback(() => setShowLogin(false), []);
+
+  const ensureLoggedIn = useCallback(() => {
+    if (!currentUser) {
+      setShowLogin(true);
+      return false;
+    }
+    return true;
+  }, [currentUser]);
+
   const value = {
     currentUser,
     logout,
+    openLogin,
+    closeLogin,
+    ensureLoggedIn,
   };
 
   return (
     <AuthContext.Provider value={value}>
-      {!loading && children}
+      {!loading && (
+        <>
+          {children}
+          {showLogin && (
+            <LoginPopup onClose={closeLogin} onLoginSuccess={closeLogin} />
+          )}
+        </>
+      )}
     </AuthContext.Provider>
   );
 }

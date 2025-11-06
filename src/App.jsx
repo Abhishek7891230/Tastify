@@ -4,7 +4,17 @@ import { MenuPage } from "./pages/Menupage";
 import { CartBanner } from "./components/CartBanner";
 import { CartPage } from "./pages/CartPage";
 import { SearchResultsPage } from "./pages/ResultsPage";
-import { AuthProvider } from "./contexts/AuthContext";
+import { AuthProvider, useAuth } from "./contexts/AuthContext";
+import { OrdersPage } from "./pages/OrderPage";
+
+function ProtectedRoute({ element }) {
+  const { currentUser, openLogin } = useAuth();
+  if (!currentUser) {
+    openLogin();
+    return null;
+  }
+  return element;
+}
 
 function App() {
   return (
@@ -13,8 +23,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/menu" element={<MenuPage />} />
-          <Route path="/cart" element={<CartPage />} />
+          <Route path="/cart" element={<ProtectedRoute element={<CartPage />} />} />
           <Route path="/search" element={<SearchResultsPage />} />
+          <Route path="/orders" element={<ProtectedRoute element={<OrdersPage />} />} />
         </Routes>
         <CartBanner />
       </Router>

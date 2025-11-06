@@ -3,9 +3,16 @@ import { menuItems } from "../data/menuData";
 import "../styles/menupage.css";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import { useAuth } from "../contexts/AuthContext";
 
 export function MenuPage() {
   const { selectedCategory, setCategory, addToCart } = useMenuStore();
+  const { ensureLoggedIn } = useAuth();
+
+  const handleAdd = (item) => {
+    if (!ensureLoggedIn()) return;
+    addToCart(item);
+  };
 
   const categories = [
     { id: "non-veg", label: "Non-Veg" },
@@ -55,7 +62,7 @@ export function MenuPage() {
                     <span className="menupage-item-price">₹{item.price}</span>
                     <button
                       className="menupage-add-btn"
-                      onClick={() => addToCart(item)}
+                      onClick={() => handleAdd(item)}
                     >
                       Add to Cart
                     </button>

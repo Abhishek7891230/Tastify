@@ -1,17 +1,21 @@
 import { useState } from "react";
 import "../styles/navbar.css";
 import { useNavigate } from "react-router-dom";
-import { LoginPopup } from "./Login";
 import { useAuth } from "../contexts/AuthContext";
+import { useMenuStore } from "../store/menuStore";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const [showLogin, setShowLogin] = useState(false);
   const [showUserMenu, setShowUserMenu] = useState(false);
-
   const navigate = useNavigate();
-  const { currentUser, logout } = useAuth();
+
+  const { currentUser, logout, openLogin, ensureLoggedIn } = useAuth();
+  const { cart } = useMenuStore();
+  const cartQuantity = cart.reduce(
+    (total, item) => total + (item.quantity || 1),
+    0
+  );
 
   const handleSearch = () => {
     if (searchQuery.trim()) {
@@ -37,19 +41,13 @@ export function Navbar() {
     }
   };
 
-  const handleLoginSuccess = (user) => {
-    console.log("User logged in:", user);
+  const handleCartClick = () => {
+    if (!ensureLoggedIn()) return;
+    navigate("/cart");
   };
 
   return (
     <>
-      {showLogin && (
-        <LoginPopup
-          onClose={() => setShowLogin(false)}
-          onLoginSuccess={handleLoginSuccess}
-        />
-      )}
-
       <nav className="navbar">
         <a href="/" className="navbar-logo">
           <img
@@ -105,7 +103,7 @@ export function Navbar() {
           >
             GitHub Repo
           </a>
-          <div className="navbar-cart" onClick={() => navigate("/cart")}>
+          <div className="navbar-cart" onClick={handleCartClick}>
             <svg
               width="18"
               height="18"
@@ -120,7 +118,9 @@ export function Navbar() {
                 strokeLinejoin="round"
               />
             </svg>
-            <button className="navbar-cart-badge">3</button>
+            <button className="navbar-cart-badge">
+              {cartQuantity > 0 && <button>{cartQuantity}</button>}
+            </button>
           </div>
 
           {currentUser ? (
@@ -184,7 +184,7 @@ export function Navbar() {
           ) : (
             <button
               className="navbar-btn"
-              onClick={() => setShowLogin(!showLogin)}
+              onClick={openLogin}
             >
               Login
             </button>
