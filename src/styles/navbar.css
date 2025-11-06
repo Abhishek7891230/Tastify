@@ -56,6 +56,40 @@
   .github-link {
     @apply bg-black text-white rounded-full px-3 py-2 text-xs sm:px-4 sm:py-2 sm:text-sm font-semibold whitespace-nowrap transition-all duration-300 mx-2;
   }
+
+  /* User Menu Styles */
+  .user-menu-container {
+    @apply relative;
+  }
+
+  .user-menu-btn {
+    @apply flex items-center gap-2;
+  }
+
+  .user-dropdown {
+    @apply absolute top-full right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-xl min-w-[200px] z-[1000] overflow-hidden;
+  }
+
+  .user-dropdown-header {
+    @apply p-3 border-b border-gray-200 bg-gray-50;
+  }
+
+  .user-dropdown-name {
+    @apply font-bold text-sm;
+  }
+
+  .user-dropdown-email {
+    @apply text-xs text-gray-600 mt-1;
+  }
+
+  .user-dropdown-item {
+    @apply w-full p-3 text-left border-0 bg-white cursor-pointer text-sm transition-colors duration-200 hover:bg-gray-50;
+  }
+
+  .user-dropdown-logout {
+    @apply w-full p-3 text-left border-0 bg-white cursor-pointer text-sm text-red-600 border-t border-gray-200 transition-colors duration-200 hover:bg-red-50;
+  }
+
   @media (max-width: 640px) {
     .github-link {
       margin-left: 0.25rem;
