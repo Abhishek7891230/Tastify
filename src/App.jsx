@@ -5,6 +5,7 @@ import { CartBanner } from "./components/CartBanner";
 import { CartPage } from "./pages/CartPage";
 import { SearchResultsPage } from "./pages/ResultsPage";
 import { AuthProvider } from "./contexts/AuthContext";
+import { OrdersPage } from "./pages/OrderPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/search" element={<SearchResultsPage />} />
+          <Route path="/orders" element={<OrdersPage />} />
         </Routes>
         <CartBanner />
       </Router>

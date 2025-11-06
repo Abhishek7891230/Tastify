@@ -3,6 +3,7 @@ import "../styles/navbar.css";
 import { useNavigate } from "react-router-dom";
 import { LoginPopup } from "./Login";
 import { useAuth } from "../contexts/AuthContext";
+import { useMenuStore } from "../store/menuStore";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -12,6 +13,8 @@ export function Navbar() {
 
   const navigate = useNavigate();
   const { currentUser, logout } = useAuth();
+  const { cart } = useMenuStore();
+  const cartQuantity = cart.reduce((total, item) => total + (item.quantity || 1), 0);
 
   const handleSearch = () => {
     if (searchQuery.trim()) {
@@ -120,7 +123,9 @@ export function Navbar() {
                 strokeLinejoin="round"
               />
             </svg>
-            <button className="navbar-cart-badge">3</button>
+            <button className="navbar-cart-badge">{cartQuantity > 0 && (
+  <button className="navbar-cart-badge">{cartQuantity}</button>
+)}</button>
           </div>
 
           {currentUser ? (

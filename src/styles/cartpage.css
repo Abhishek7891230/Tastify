@@ -104,4 +104,12 @@
   .delivery-fee-scratched {
     @apply line-through text-gray-400;
   }
+
+  .order-warning {
+    @apply mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg;
+  }
+
+  .warning-text {
+    @apply text-sm text-yellow-800 text-center;
+  }
 }
