@@ -57,7 +57,6 @@
     @apply bg-black text-white rounded-full px-3 py-2 text-xs sm:px-4 sm:py-2 sm:text-sm font-semibold whitespace-nowrap transition-all duration-300 mx-2;
   }
 
-  /* User Menu Styles */
   .user-menu-container {
     @apply relative;
   }
