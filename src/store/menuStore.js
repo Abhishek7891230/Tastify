@@ -91,7 +91,7 @@ export const useMenuStore = create(
           if (currentState.currentOrder?.id === newOrder.id) {
             set({ currentOrder: null });
           }
-        }, 2 * 60 * 1000);
+        }, 1 * 60 * 1000);
 
         return newOrder;
       },

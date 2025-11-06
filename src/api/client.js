@@ -7,5 +7,3 @@ export async function fetchProducts() {
   }
   return await response.json();
 }
-
-

@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
+import dotenv from "dotenv";
 import { Low } from "lowdb";
 import { JSONFile } from "lowdb/node";
-import dotenv from "dotenv";
 
 dotenv.config();
 
@@ -11,7 +11,6 @@ app.use(cors());
 app.use(express.json());
 
 const adapter = new JSONFile("db.json");
-
 const defaultData = { products: [] };
 const db = new Low(adapter, defaultData);
 

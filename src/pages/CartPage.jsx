@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMenuStore } from "../store/menuStore";
+import { useAuth } from "../contexts/AuthContext";
 import { PaymentSuccessPopup } from "../components/PaymentSuccess";
+import { sendOrderConfirmation } from "../utils/emailService";
 import "../styles/cartpage.css";
 
 export function CartPage() {
@@ -13,7 +15,10 @@ export function CartPage() {
     canPlaceOrder,
     currentOrder,
   } = useMenuStore();
+
+  const { currentUser } = useAuth();
   const navigate = useNavigate();
+
   const [showSuccess, setShowSuccess] = useState(false);
   const [orderId, setOrderId] = useState("");
 
@@ -25,17 +30,8 @@ export function CartPage() {
   const deliveryFee = total >= 500 ? 0 : 40;
   const finalTotal = total + deliveryFee;
 
-  const handlePlaceOrder = () => {
-    if (!canPlaceOrder()) {
-      const orderTime = new Date(currentOrder.orderDate);
-      const timeLeft = Math.ceil(
-        (5 * 60 * 1000 - (Date.now() - orderTime.getTime())) / 60000
-      );
-      alert(
-        `Please wait ${timeLeft} more minute(s) before placing another order.`
-      );
-      return;
-    }
+  const handlePlaceOrder = async () => {
+    if (!canPlaceOrder()) return;
 
     const newOrder = placeOrder({
       total,
@@ -43,12 +39,23 @@ export function CartPage() {
       finalTotal,
     });
 
-    if (newOrder) {
-      setOrderId(newOrder.id);
-      setShowSuccess(true);
-    } else {
-      alert("Unable to place order. Please try again.");
+    if (!newOrder) return;
+
+    if (currentUser?.email) {
+      try {
+        await sendOrderConfirmation({
+          email: currentUser.email,
+          orderId: newOrder.id,
+          items: cart,
+          finalTotal: finalTotal,
+        });
+      } catch (err) {
+        console.error("Email error:", err);
+      }
     }
+
+    setOrderId(newOrder.id);
+    setShowSuccess(true);
   };
 
   const handleCloseSuccess = () => {
@@ -139,6 +146,7 @@ export function CartPage() {
               <span>Total item price</span>
               <span>₹{total}</span>
             </div>
+
             <div className="summary-line">
               <span>Delivery Fee</span>
               <span>
