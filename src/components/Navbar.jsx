@@ -182,10 +182,7 @@ export function Navbar() {
               )}
             </div>
           ) : (
-            <button
-              className="navbar-btn"
-              onClick={openLogin}
-            >
+            <button className="navbar-btn" onClick={openLogin}>
               Login
             </button>
           )}

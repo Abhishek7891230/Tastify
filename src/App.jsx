@@ -23,9 +23,15 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/menu" element={<MenuPage />} />
-          <Route path="/cart" element={<ProtectedRoute element={<CartPage />} />} />
+          <Route
+            path="/cart"
+            element={<ProtectedRoute element={<CartPage />} />}
+          />
           <Route path="/search" element={<SearchResultsPage />} />
-          <Route path="/orders" element={<ProtectedRoute element={<OrdersPage />} />} />
+          <Route
+            path="/orders"
+            element={<ProtectedRoute element={<OrdersPage />} />}
+          />
         </Routes>
         <CartBanner />
       </Router>
