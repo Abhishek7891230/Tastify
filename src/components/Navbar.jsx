@@ -2,12 +2,16 @@ import { useState } from "react";
 import "../styles/navbar.css";
 import { useNavigate } from "react-router-dom";
 import { LoginPopup } from "./Login";
+import { useAuth } from "../contexts/AuthContext";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const navigate = useNavigate();
   const [showLogin, setShowLogin] = useState(false);
+  const [showUserMenu, setShowUserMenu] = useState(false);
+
+  const navigate = useNavigate();
+  const { currentUser, logout } = useAuth();
 
   const handleSearch = () => {
     if (searchQuery.trim()) {
@@ -22,9 +26,29 @@ export function Navbar() {
     }
   };
 
+  const handleLogout = async () => {
+    try {
+      await logout();
+      setShowUserMenu(false);
+      alert("Logged out successfully!");
+    } catch (error) {
+      console.error("Logout error:", error);
+      alert("Failed to logout");
+    }
+  };
+
+  const handleLoginSuccess = (user) => {
+    console.log("User logged in:", user);
+  };
+
   return (
     <>
-      {showLogin && <LoginPopup onClose={() => setShowLogin(false)} />}
+      {showLogin && (
+        <LoginPopup
+          onClose={() => setShowLogin(false)}
+          onLoginSuccess={handleLoginSuccess}
+        />
+      )}
 
       <nav className="navbar">
         <a href="/" className="navbar-logo">
@@ -99,12 +123,72 @@ export function Navbar() {
             <button className="navbar-cart-badge">3</button>
           </div>
 
-          <button
-            className="navbar-btn"
-            onClick={() => setShowLogin(!showLogin)}
-          >
-            Login
-          </button>
+          {currentUser ? (
+            <div className="user-menu-container">
+              <button
+                className="navbar-btn user-menu-btn"
+                onClick={() => setShowUserMenu(!showUserMenu)}
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                    fill="currentColor"
+                  />
+                </svg>
+                {currentUser.displayName || "User"}
+              </button>
+
+              {showUserMenu && (
+                <div className="user-dropdown">
+                  <div className="user-dropdown-header">
+                    <div className="user-dropdown-name">
+                      {currentUser.displayName || "User"}
+                    </div>
+                    <div className="user-dropdown-email">
+                      {currentUser.email}
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => {
+                      navigate("/orders");
+                      setShowUserMenu(false);
+                    }}
+                    className="user-dropdown-item"
+                  >
+                    My Orders
+                  </button>
+                  <button
+                    onClick={() => {
+                      navigate("/profile");
+                      setShowUserMenu(false);
+                    }}
+                    className="user-dropdown-item"
+                  >
+                    Profile
+                  </button>
+                  <button
+                    onClick={handleLogout}
+                    className="user-dropdown-logout"
+                  >
+                    Logout
+                  </button>
+                </div>
+              )}
+            </div>
+          ) : (
+            <button
+              className="navbar-btn"
+              onClick={() => setShowLogin(!showLogin)}
+            >
+              Login
+            </button>
+          )}
 
           <button
             onClick={() => setOpen(!open)}
