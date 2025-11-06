@@ -27,7 +27,7 @@ export function SearchResultsPage() {
       const searchResults = fuzzySearch(query, allItems);
       setResults(searchResults);
       setLoading(false);
-    }, 500);
+    }, 1000);
   }, [query, navigate, getAllMenuItems]);
 
   const fuzzySearch = (searchTerm, items) => {
@@ -93,57 +93,59 @@ export function SearchResultsPage() {
       <div className="menupage-container">
         <div className="menupage-content">
           <div className="search-results-header">
-            <h1 className="search-results-title">Search Results for "{query}"</h1>
+            <h1 className="search-results-title">
+              Search Results for "{query}"
+            </h1>
             <p className="search-results-count">
               {results.length} {results.length === 1 ? "item" : "items"} found
             </p>
           </div>
 
-        {results.length === 0 ? (
-          <div className="search-no-results">
-            <p className="search-no-results-text">
-              No items found matching "{query}"
-            </p>
-            <p className="search-no-results-hint">
-              Try searching with different keywords
-            </p>
-            <button
-              onClick={() => navigate("/menu")}
-              className="search-back-btn"
-            >
-              Browse Menu
-            </button>
-          </div>
-        ) : (
-          <div className="menupage-items-grid">
-            {results.map((item, idx) => (
-              <div key={idx} className="menupage-item-card">
-                <div className="menupage-item-img-container">
-                  <img
-                    src={item.img}
-                    alt={item.name}
-                    className="menupage-item-img"
-                  />
-                </div>
-                <div className="menupage-item-content">
-                  <h3 className="menupage-item-name">{item.name}</h3>
-                  <p className="menupage-item-description">
-                    {item.description}
-                  </p>
-                  <div className="menupage-item-footer">
-                    <span className="menupage-item-price">₹{item.price}</span>
-                    <button
-                      onClick={() => handleAddToCart(item)}
-                      className="menupage-add-btn"
-                    >
-                      Add to Cart
-                    </button>
+          {results.length === 0 ? (
+            <div className="search-no-results">
+              <p className="search-no-results-text">
+                No items found matching "{query}"
+              </p>
+              <p className="search-no-results-hint">
+                Try searching with different keywords
+              </p>
+              <button
+                onClick={() => navigate("/menu")}
+                className="search-back-btn"
+              >
+                Browse Menu
+              </button>
+            </div>
+          ) : (
+            <div className="menupage-items-grid">
+              {results.map((item, idx) => (
+                <div key={idx} className="menupage-item-card">
+                  <div className="menupage-item-img-container">
+                    <img
+                      src={item.img}
+                      alt={item.name}
+                      className="menupage-item-img"
+                    />
+                  </div>
+                  <div className="menupage-item-content">
+                    <h3 className="menupage-item-name">{item.name}</h3>
+                    <p className="menupage-item-description">
+                      {item.description}
+                    </p>
+                    <div className="menupage-item-footer">
+                      <span className="menupage-item-price">₹{item.price}</span>
+                      <button
+                        onClick={() => handleAddToCart(item)}
+                        className="menupage-add-btn"
+                      >
+                        Add to Cart
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        )}
+              ))}
+            </div>
+          )}
         </div>
       </div>
       <Footer />

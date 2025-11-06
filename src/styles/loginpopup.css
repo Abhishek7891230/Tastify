@@ -1,0 +1,39 @@
+@import "../index.css" reference;
+
+@layer components {
+  .login-container {
+    @apply fixed inset-0 backdrop-blur-sm flex justify-center items-center mt-6 z-50;
+  }
+
+  .login-form {
+    @apply bg-white rounded-2xl shadow-lg p-8 w-[90%] max-w-md relative;
+  }
+
+  .close-form-btn {
+    @apply absolute top-3 right-3 text-gray-600 hover:text-black text-xl;
+  }
+
+  .form-header {
+    @apply text-xl font-bold mb-4 text-center;
+  }
+
+  .form-container {
+    @apply flex flex-col gap-4;
+  }
+
+  .login-btn {
+    @apply bg-black text-white py-2 rounded hover:bg-gray-800 transition;
+  }
+
+  .login-btn:disabled {
+    @apply bg-gray-400 cursor-not-allowed hover:bg-gray-400;
+  }
+
+  .signup-btn {
+    @apply bg-black text-white py-2 rounded hover:bg-gray-800 transition;
+  }
+
+  .signup-btn:disabled {
+    @apply bg-gray-400 cursor-not-allowed hover:bg-gray-400;
+  }
+}
