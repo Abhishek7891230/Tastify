@@ -112,4 +112,24 @@
   .warning-text {
     @apply text-sm text-yellow-800 text-center;
   }
+
+  .processing-overlay {
+    @apply fixed inset-0 bg-white z-50 flex items-center justify-center;
+  }
+
+  .processing-content {
+    @apply flex flex-col items-center justify-center text-center px-6;
+  }
+
+  .processing-spinner {
+    @apply w-16 h-16 border-4 border-gray-200 border-t-black rounded-full animate-spin mb-6;
+  }
+
+  .processing-title {
+    @apply text-2xl font-bold text-gray-800 mb-2;
+  }
+
+  .processing-message {
+    @apply text-gray-600 text-base;
+  }
 }

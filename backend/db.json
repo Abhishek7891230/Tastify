@@ -6,7 +6,7 @@
       "price": 249,
       "category": "non-veg",
       "description": "Aromatic basmati rice with tender chicken pieces",
-      "img": "https://i.imgur.com/1.jpg"
+      "img": "https://media.istockphoto.com/id/1345624336/photo/chicken-biriyani.jpg?s=612x612&w=0&k=20&c=adU_N0P-1SKMQLZu5yu7aPknfLLgbViI8XILqLP92A4="
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "price": 349,
       "category": "non-veg",
       "description": "Slow-cooked mutton with fragrant spices",
-      "img": "https://i.imgur.com/2.jpg"
+      "img": "https://media.istockphoto.com/id/1328536877/photo/delicious-mutton-biryani-served-in-black-pot-with-raita-kolkata-style-dum-biryani-with-mutton.jpg?s=612x612&w=0&k=20&c=MSQMxoD2AkH36lA1M1oIwWYKQk3jdJ8xxGaFgL2MyQY="
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "price": 149,
       "category": "non-veg",
       "description": "Boiled eggs cooked in spicy curry",
-      "img": "https://i.imgur.com/3.jpg"
+      "img": "https://media.istockphoto.com/id/1072940148/photo/fried-egg-curry-or-anda-masala-served-in-a-bowl-selective-focus.jpg?s=612x612&w=0&k=20&c=cYvM9X6VQ0UlQyUEWvFk5VMNS6wg8K0o3kVuVDuwbZU="
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "price": 299,
       "category": "non-veg",
       "description": "Creamy tomato gravy with juicy chicken",
-      "img": "https://i.imgur.com/4.jpg"
+      "img": "https://media.istockphoto.com/id/639390540/photo/indian-butter-chicken.jpg?s=612x612&w=0&k=20&c=SaPiIG_0tdn9x9Q_y2YqTvpKBRGOlQB5wbdIj7e3w8Y="
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "price": 199,
       "category": "non-veg",
       "description": "Chicken pieces marinated and grilled",
-      "img": "https://i.imgur.com/5.jpg"
+      "img": "https://media.istockphoto.com/id/1320005396/photo/chicken-tikka-kebab.jpg?s=612x612&w=0&k=20&c=CeJ-Bq-TN9B9O7x3fejz_PVXy5YYv0VLqQp6C6hNyjc="
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "price": 259,
       "category": "non-veg",
       "description": "Tangy, spicy coastal-style curry",
-      "img": "https://i.imgur.com/6.jpg"
+      "img": "https://media.istockphoto.com/id/667669040/photo/top-view-of-spicy-and-hot-king-fish-curry-kerala-indian-food.jpg?s=612x612&w=0&k=20&c=0L0pQ_rDNF11MYSkPVskTSgUqqDUbxyshxhoMd3jae4="
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "price": 299,
       "category": "non-veg",
       "description": "Crispy fried prawns with spices",
-      "img": "https://i.imgur.com/7.jpg"
+      "img": "https://media.istockphoto.com/id/610264540/photo/cajun-shrimp.jpg?s=612x612&w=0&k=20&c=0pdBeE3DBE-0eDIY25PU0uYAxSva-OkVLLXyDvQ5RBs="
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "price": 150,
       "category": "non-veg",
       "description": "Middle Eastern style wrap with chicken",
-      "img": "https://i.imgur.com/8.jpg"
+      "img": "https://media.istockphoto.com/id/475712608/photo/turkish-doner-kebab-shawarma-roll-with-meat-and-pita-bread.jpg?s=612x612&w=0&k=20&c=KjPi2zprOWZ6Mkdyxe5vCz9T-hQgMwYVDeLIx5BnolA="
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "price": 329,
       "category": "non-veg",
       "description": "Rich Mughlai style gravy",
-      "img": "https://i.imgur.com/9.jpg"
+      "img": "https://media.istockphoto.com/id/1421211322/photo/dal-gosht-or-daal-gosht-is-one-of-the-very-popular-mutton-recipes-in-india-mutton-cooked-with.jpg?s=612x612&w=0&k=20&c=f5kPu_jcTX8O5Jf4jAMQItuzcyGKb3RfveTd5_m-ugU="
     },
     {
       "id": 10,
@@ -78,7 +78,7 @@
       "price": 180,
       "category": "non-veg",
       "description": "Crispy fried chicken lollipops",
-      "img": "https://i.imgur.com/10.jpg"
+      "img": "https://media.istockphoto.com/id/1297553194/photo/chicken-lollipop-spicy-mala-sichuan-pepper-flavor-suace-chinese-style.jpg?s=612x612&w=0&k=20&c=g_e0eUC5tlkyD54VkZFuG47IM1mJQL1NQkMEmFgwldk="
     },
 
     {
@@ -87,7 +87,7 @@
       "price": 229,
       "category": "veg",
       "description": "Rich creamy paneer gravy",
-      "img": "https://i.imgur.com/11.jpg"
+      "img": "https://media.istockphoto.com/id/1463279736/photo/cheese-cottage-curry.jpg?s=612x612&w=0&k=20&c=X3DPRo-EpRgAl6DZO2plG97eZBh72T-ZJcf_MppgRUE="
     },
     {
       "id": 12,
@@ -95,7 +95,7 @@
       "price": 199,
       "category": "veg",
       "description": "Flavourful biryani with vegetables",
-      "img": "https://i.imgur.com/12.jpg"
+      "img": "https://media.istockphoto.com/id/1292442851/photo/traditional-hyderabadi-vegetable-veg-dum-biryani-with-mixed-veggies-served-with-mixed-raita.jpg?s=612x612&w=0&k=20&c=FPsC5CB9UqiS09045jGu_hd3dgPHH1Z9IZm6JXe2yNA="
     },
     {
       "id": 13,
@@ -103,7 +103,7 @@
       "price": 120,
       "category": "veg",
       "description": "Potato and cauliflower curry",
-      "img": "https://i.imgur.com/13.jpg"
+      "img": "https://media.istockphoto.com/id/174961905/photo/gobi-aloo-indian-curry-dish.jpg?s=612x612&w=0&k=20&c=Ztm0QBsc4GFm_5yD5v0Dfy5j-Odm1VuMBVhFOEQoO8I="
     },
     {
       "id": 14,
@@ -111,7 +111,7 @@
       "price": 150,
       "category": "veg",
       "description": "Simple aromatic rice dish",
-      "img": "https://i.imgur.com/14.jpg"
+      "img": "https://media.istockphoto.com/id/1273291313/photo/delicious-veg-peas-pulao-rice.jpg?s=612x612&w=0&k=20&c=W4Q-qx9gPfmRYzG9_l5h91oLGZ87QNdX_4sWsoDOYnE="
     },
     {
       "id": 15,
@@ -119,7 +119,7 @@
       "price": 180,
       "category": "veg",
       "description": "Creamy Punjabi dal",
-      "img": "https://i.imgur.com/15.jpg"
+      "img": "https://media.istockphoto.com/id/1170374719/photo/dal-makhani-at-dark-background.jpg?s=612x612&w=0&k=20&c=49yLaUAE2apakVk2AAiRQimZd98WtSjIQ0hzCzWsmns="
     },
     {
       "id": 16,
@@ -127,7 +127,7 @@
       "price": 90,
       "category": "veg",
       "description": "South Indian dosa with potato filling",
-      "img": "https://i.imgur.com/16.jpg"
+      "img": "https://media.istockphoto.com/id/1205482290/photo/masala-dosa-on-banana-leaf-with-both-sambar-and-coconut-chutney-south-indian-vegetarian-snack.jpg?s=612x612&w=0&k=20&c=FcujJMpizSvYEj5-2jspq5woZ4F5HloXuOX33CD1MeI="
     },
     {
       "id": 17,
@@ -135,7 +135,7 @@
       "price": 70,
       "category": "veg",
       "description": "Soft idlis with sambar",
-      "img": "https://i.imgur.com/17.jpg"
+      "img": "https://media.istockphoto.com/id/184721030/photo/sambar-with-idli-indian-dish.jpg?s=612x612&w=0&k=20&c=G1Ee4Yc6m-LOzU6g3IP9rjotMvQTPpt7ee7kmUAIz5M="
     },
     {
       "id": 18,
@@ -143,7 +143,7 @@
       "price": 140,
       "category": "veg",
       "description": "Spicy chickpeas with fried bhature",
-      "img": "https://i.imgur.com/18.jpg"
+      "img": "https://media.istockphoto.com/id/1292633282/photo/chole-bhature-spicy-chick-peas-curry-also-known-as-chole-or-channa-masala-is-traditional.jpg?s=612x612&w=0&k=20&c=_RchJn069ZFAnwm6alF2VWA3VDbJnm-JIid3antsIZc="
     },
     {
       "id": 19,
@@ -151,7 +151,7 @@
       "price": 210,
       "category": "veg",
       "description": "Spinach gravy with paneer",
-      "img": "https://i.imgur.com/19.jpg"
+      "img": "https://media.istockphoto.com/id/1396307254/photo/palak-paneer-and-tandoori-roti.jpg?s=612x612&w=0&k=20&c=UI0MRXoHCS4KuACB2vcLzamFwJ1lkQJAbhHr2EiTRSo="
     },
     {
       "id": 20,
@@ -159,7 +159,7 @@
       "price": 220,
       "category": "veg",
       "description": "Paneer cooked with bell peppers",
-      "img": "https://i.imgur.com/20.jpg"
+      "img": "https://media.istockphoto.com/id/1085155140/photo/malai-or-achari-paneer-in-a-gravy-made-using-red-gravy-and-green-capsicum-served-in-a-bowl.jpg?s=612x612&w=0&k=20&c=Wlj8KQz4vj29zclmNX-xMDSXMYMZfKPT62uX7FUmY9I="
     },
 
     {
@@ -168,7 +168,7 @@
       "price": 160,
       "category": "chinese",
       "description": "Veg balls in Manchurian sauce",
-      "img": "https://i.imgur.com/21.jpg"
+      "img": "https://media.istockphoto.com/id/1208083887/photo/freshly-prepared-veg-manchurian-with-a-bowl-of-fried-rice.jpg?s=612x612&w=0&k=20&c=nTtgKk-SSQAh1E0Pz8SnpGjqMRSIIXM6XiDHIsd5LDQ="
     },
     {
       "id": 22,
@@ -176,7 +176,7 @@
       "price": 190,
       "category": "chinese",
       "description": "Classic Indo-Chinese rice",
-      "img": "https://i.imgur.com/22.jpg"
+      "img": "https://media.istockphoto.com/id/483676117/photo/fried-chicken-with-rice-and-vegetables.jpg?s=612x612&w=0&k=20&c=0pNs9OKDqX382LxSwtBppr60xTs6AFHBhsDd2mtvQDI="
     },
     {
       "id": 23,
@@ -184,7 +184,7 @@
       "price": 150,
       "category": "chinese",
       "description": "Stir fried noodles with veggies",
-      "img": "https://i.imgur.com/23.jpg"
+      "img": "https://media.istockphoto.com/id/1158159302/photo/schezwan-hakka-noodles-served-in-a-bowl-top-view.jpg?s=612x612&w=0&k=20&c=dMoxuwAbzWRCJt7KaSkRCuxM1HZn8v9PH9UAc6ppmak="
     },
     {
       "id": 24,
@@ -192,7 +192,7 @@
       "price": 220,
       "category": "chinese",
       "description": "Fried chicken tossed in chilli sauce",
-      "img": "https://i.imgur.com/24.jpg"
+      "img": "https://media.istockphoto.com/id/1072959600/photo/indian-chilli-chicken-dry-served-in-a-plate-over-moody-background-selective-focus.jpg?s=612x612&w=0&k=20&c=xV3oz_Nhi6_5gfoNE1qO_qUrqnlCoiM4cziUbxSKSx8="
     },
     {
       "id": 25,
@@ -200,7 +200,7 @@
       "price": 140,
       "category": "chinese",
       "description": "Fried rice with veggies",
-      "img": "https://i.imgur.com/25.jpg"
+      "img": "https://media.istockphoto.com/id/1292617507/photo/tasty-veg-schezwan-fried-rice-served-in-bowl-over-a-rustic-wooden-background-indian-cuisine.jpg?s=612x612&w=0&k=20&c=MlfiFWbcPDUj2wnjtxoHBxSUrRrKb9c1OR8rS9H4goc="
     },
     {
       "id": 26,
@@ -208,7 +208,7 @@
       "price": 180,
       "category": "chinese",
       "description": "Noodles with chicken strips",
-      "img": "https://i.imgur.com/26.jpg"
+      "img": "https://media.istockphoto.com/id/1158159302/photo/schezwan-hakka-noodles-served-in-a-bowl-top-view.jpg?s=612x612&w=0&k=20&c=dMoxuwAbzWRCJt7KaSkRCuxM1HZn8v9PH9UAc6ppmak="
     },
     {
       "id": 27,
@@ -216,7 +216,7 @@
       "price": 170,
       "category": "chinese",
       "description": "Crispy paneer tossed in chilli sauce",
-      "img": "https://i.imgur.com/27.jpg"
+      "img": "https://media.istockphoto.com/id/1389160681/photo/chilli-mushroom-indian-snack-food.jpg?s=612x612&w=0&k=20&c=YjI-qBxvYow2ExmwrEvxv63pEU4hRHu4sn4Dr_4a3to="
     },
     {
       "id": 28,
@@ -224,7 +224,7 @@
       "price": 120,
       "category": "chinese",
       "description": "Steamed flour dumplings",
-      "img": "https://i.imgur.com/28.jpg"
+      "img": "https://media.istockphoto.com/id/813464568/photo/fried-nepalese-momos.jpg?s=612x612&w=0&k=20&c=kHXY_scKqMziN16Qbi0lzL_yNAKVXzG70RyHZwUX33s="
     },
     {
       "id": 29,
@@ -232,7 +232,7 @@
       "price": 100,
       "category": "chinese",
       "description": "Steamed dumplings with veg stuffing",
-      "img": "https://i.imgur.com/29.jpg"
+      "img": "https://media.istockphoto.com/id/1292635321/photo/veg-steam-momo-nepalese-traditional-dish-momo-stuffed-with-vegetables-and-then-cooked-and.jpg?s=612x612&w=0&k=20&c=NyxQvDnBq7Ki09Zi21JEMxpuZ_uVr45ZBSavqXJ2T1s="
     },
     {
       "id": 30,
@@ -240,7 +240,7 @@
       "price": 160,
       "category": "chinese",
       "description": "Spicy Indo-Chinese noodles",
-      "img": "https://i.imgur.com/30.jpg"
+      "img": "https://media.istockphoto.com/id/1252605665/photo/chilli-garlic-hakka-noodles-in-black-bowl-isolated-on-white-background-indo-chinese.jpg?s=612x612&w=0&k=20&c=lesS8Wt5JVauAqjVh9uPfoiGr1ZjsnjHWZyKw3zLg2E="
     },
 
     {
@@ -249,7 +249,7 @@
       "price": 20,
       "category": "snacks",
       "description": "Deep-fried pastry with potato filling",
-      "img": "https://i.imgur.com/31.jpg"
+      "img": "https://media.istockphoto.com/id/1345733315/photo/close-up-image-of-fried-samosas-stuffed-with-spiced-potato-peas-and-meat-served-on-a.jpg?s=612x612&w=0&k=20&c=a5fAnPuIUE9KXNWdruTQh-90OPdyTIE9QcuP7ffhLCE="
     },
     {
       "id": 32,
@@ -257,7 +257,7 @@
       "price": 40,
       "category": "snacks",
       "description": "Crispy puris with flavored water",
-      "img": "https://i.imgur.com/32.jpg"
+      "img": "https://media.istockphoto.com/id/1257507130/photo/three-glasses-of-various-milkshakes-strawberry-chocolate-and-vanilla-milkshake-on-wooden.jpg?s=612x612&w=0&k=20&c=ujhttpmHMI1KqCkr9QYeLWs6CZ4I4pcx_x7Z814wddc="
     },
     {
       "id": 33,
@@ -265,7 +265,7 @@
       "price": 30,
       "category": "snacks",
       "description": "Mumbai street-style snack",
-      "img": "https://i.imgur.com/33.jpg"
+      "img": "https://media.istockphoto.com/id/1329212743/photo/vada-pav.jpg?s=612x612&w=0&k=20&c=K08WlL8YxjjLC5MfmuiKhHI04RZ-UGsVAQVIBKdu-QM="
     },
     {
       "id": 34,
@@ -273,7 +273,7 @@
       "price": 70,
       "category": "snacks",
       "description": "Crispy rolls stuffed with veggies",
-      "img": "https://i.imgur.com/34.jpg"
+      "img": "https://media.istockphoto.com/id/1070157508/photo/deep-fried-spring-rolls.jpg?s=612x612&w=0&k=20&c=vrq5t6FP6Te-4beX7enWcUAT2g8fijykZqhJ4jTMY4M="
     },
     {
       "id": 35,
@@ -281,7 +281,7 @@
       "price": 25,
       "category": "snacks",
       "description": "Flaky fried snack",
-      "img": "https://i.imgur.com/35.jpg"
+      "img": "https://media.istockphoto.com/id/1413566890/photo/shegaon-or-rajasthani-aloo-pyas-ki-kachori-served-with-tamarind-chutney-and-sev-kachori-or.jpg?s=612x612&w=0&k=20&c=OgdLbxFNYfKaKuaNIUtNbC1XtPGvpaharG7dy3efGK4="
     },
     {
       "id": 36,
@@ -289,7 +289,7 @@
       "price": 50,
       "category": "snacks",
       "description": "Onions fried with chickpea flour",
-      "img": "https://i.imgur.com/36.jpg"
+      "img": "https://media.istockphoto.com/id/2168834069/photo/indian-snack-tea-time-snack-pakoda-kanda-bhaji-or-pyas-pakoda-ried-onion-pakora-served.jpg?s=612x612&w=0&k=20&c=dC-OUpKCzuPI6-5DkvB0Mpt91YTTrY5D-MjIYx6l-zw="
     },
     {
       "id": 37,
@@ -297,7 +297,7 @@
       "price": 60,
       "category": "snacks",
       "description": "Street style omelette with bread",
-      "img": "https://i.imgur.com/37.jpg"
+      "img": "https://media.istockphoto.com/id/485040276/photo/herb-omelette-with-chives-and-oregano.jpg?s=612x612&w=0&k=20&c=gWzwd_-neHOmCgirxaaGCwEJElbuYPzY917oWPWp6kI="
     },
     {
       "id": 38,
@@ -305,7 +305,7 @@
       "price": 30,
       "category": "snacks",
       "description": "Fried potato patties",
-      "img": "https://i.imgur.com/38.jpg"
+      "img": "https://media.istockphoto.com/id/1264056882/photo/indian-aloo-tikki-or-potato-cutlet-is-made-out-of-boiled-potatoes-peas-and-various-curry.jpg?s=612x612&w=0&k=20&c=yr981RXBJGF1UIhKkuzct3UyiQ4uqAvnY_KRQUk1W0k="
     },
     {
       "id": 39,
@@ -313,7 +313,7 @@
       "price": 35,
       "category": "snacks",
       "description": "Crispy veg cutlet",
-      "img": "https://i.imgur.com/39.jpg"
+      "img": "https://media.istockphoto.com/id/1334489824/photo/chicken-cutlet-with-tomato-sauce.jpg?s=612x612&w=0&k=20&c=QTqv_JAbGbAVQ68q30167qkzXkeEJe7fJqDy3hdBNNI="
     },
     {
       "id": 40,
@@ -321,7 +321,7 @@
       "price": 120,
       "category": "snacks",
       "description": "Small crispy chicken chunks",
-      "img": "https://i.imgur.com/40.jpg"
+      "img": "https://media.istockphoto.com/id/613134972/photo/chicken-delicious-homemade-popcorn.jpg?s=612x612&w=0&k=20&c=3HIgOUbb1o7aqF8XCwqghuxOLnJaxS3tCUJn3NBk2nU="
     },
 
     {
@@ -330,7 +330,7 @@
       "price": 299,
       "category": "pizza",
       "description": "Classic mozzarella pizza",
-      "img": "https://i.imgur.com/41.jpg"
+      "img": "https://media.istockphoto.com/id/910195988/photo/pizza-margarita.jpg?s=612x612&w=0&k=20&c=ZPlovEsbFWJq6M3kLR98u0eo8NCYiFEuRjkMKQCwH40="
     },
     {
       "id": 42,
@@ -338,7 +338,7 @@
       "price": 399,
       "category": "pizza",
       "description": "Loaded with veggie toppings",
-      "img": "https://i.imgur.com/42.jpg"
+      "img": "https://media.istockphoto.com/id/2192670715/photo/italian-culinary-still-life-a-farmhouse-pizza-with-potatoes-chorizo-olives-and-cheese-seen.jpg?s=612x612&w=0&k=20&c=1buD9Kd3_L1AAdnWObQJHN7Dn3aTK2WX0GvvvtAA33g="
     },
     {
       "id": 43,
@@ -346,7 +346,7 @@
       "price": 449,
       "category": "pizza",
       "description": "Topped with spicy pepperoni slices",
-      "img": "https://i.imgur.com/43.jpg"
+      "img": "https://media.istockphoto.com/id/521403691/photo/hot-homemade-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=PaISuuHcJWTEVoDKNnxaHy7L2BTUkyYZ06hYgzXmTbo="
     },
     {
       "id": 44,
@@ -354,7 +354,7 @@
       "price": 429,
       "category": "pizza",
       "description": "BBQ chicken with cheese",
-      "img": "https://i.imgur.com/44.jpg"
+      "img": "https://media.istockphoto.com/id/489809469/photo/bbq-chicken-pizza.jpg?s=612x612&w=0&k=20&c=kB3xRU4-A7fJ9iYpIzlOqSiLX4f6OIath45yFOmqjxQ="
     },
     {
       "id": 45,
@@ -362,7 +362,7 @@
       "price": 499,
       "category": "pizza",
       "description": "Loaded cheese-filled crust",
-      "img": "https://i.imgur.com/45.jpg"
+      "img": "https://media.istockphoto.com/id/2158595641/photo/pizza-with-chicken-fillet-bacon-sausages-chili-pepper-onion-and-greens.jpg?s=612x612&w=0&k=20&c=Csoe0E_kNZ_uv5-FvsxEmqBEt0vXUMAZYuDp11XxwCo="
     },
     {
       "id": 46,
@@ -370,7 +370,7 @@
       "price": 379,
       "category": "pizza",
       "description": "Paneer toppings with spicy sauce",
-      "img": "https://i.imgur.com/46.jpg"
+      "img": "https://media.istockphoto.com/id/2050806771/photo/indore-sarafa-bazaar-indias-midnight-food-capital-of-madhya-pradesh-taste-of-india.jpg?s=612x612&w=0&k=20&c=hn7pHXdMD_kaXFnmA1xhkc44DcidhqDwc2m6ar4d4fk="
     },
     {
       "id": 47,
@@ -378,7 +378,7 @@
       "price": 359,
       "category": "pizza",
       "description": "Loaded with colorful veggies",
-      "img": "https://i.imgur.com/47.jpg"
+      "img": "https://media.istockphoto.com/id/1214285109/photo/italian-pizza-margarita-with-mozzarella-cheese-tomato-sauce-and-fresh-arugula-on-wooden-table.jpg?s=612x612&w=0&k=20&c=O8BbxS7TC5FZI8gQLJVE6_MdfuWXo_Nv2NIa3Ct9i4E="
     },
     {
       "id": 48,
@@ -386,7 +386,7 @@
       "price": 389,
       "category": "pizza",
       "description": "Topped with fresh mushrooms",
-      "img": "https://i.imgur.com/48.jpg"
+      "img": "https://media.istockphoto.com/id/510107751/photo/pizza-slice.jpg?s=612x612&w=0&k=20&c=DEVKoFa-xF0Qt6yCRnZqo-4y2fww6qmBawRYEB5F0DY="
     },
     {
       "id": 49,
@@ -394,7 +394,7 @@
       "price": 420,
       "category": "pizza",
       "description": "Extra layer of cheese",
-      "img": "https://i.imgur.com/49.jpg"
+      "img": "https://media.istockphoto.com/id/1411671771/photo/triple-cheese-pizza-isolated-on-wooden-cutting-board-on-plain-white-background-side-view-of.jpg?s=612x612&w=0&k=20&c=VBStU_t0-hcssJBoIdPzv_3rzIhC1o1ibjwkt9cDNXU="
     },
     {
       "id": 50,
@@ -402,7 +402,7 @@
       "price": 279,
       "category": "pizza",
       "description": "Garlic bread infused pizza",
-      "img": "https://i.imgur.com/50.jpg"
+      "img": "https://media.istockphoto.com/id/1151446369/photo/tasty-supreme-pizza-with-olives-peppers-onions-and-sausage.jpg?s=612x612&w=0&k=20&c=vWBJ6g3EFb0uBDG9otMVL6HircNpoZg5PJU4U6XHQHg="
     },
 
     {
@@ -411,7 +411,7 @@
       "price": 150,
       "category": "snacks",
       "description": "Chicken wrap with mayo",
-      "img": "https://i.imgur.com/51.jpg"
+      "img": "https://media.istockphoto.com/id/936899360/photo/lettuce-wraps-with-chicken-carrot-peanuts-and-scallion-stuffed-iceberg-lettuce-leaves-with.jpg?s=612x612&w=0&k=20&c=cQZ7e8sE9iBqixrh19-4TvHYW-6Zfr5b54UlXI6K1lc="
     },
     {
       "id": 52,
@@ -419,7 +419,7 @@
       "price": 130,
       "category": "snacks",
       "description": "Paneer stuffed wrap",
-      "img": "https://i.imgur.com/52.jpg"
+      "img": "https://media.istockphoto.com/id/175534964/photo/mexican-chicken-fajita.jpg?s=612x612&w=0&k=20&c=9NKJ0p6D_URG1SMJ0jCoKOk_eBd1GpgMl9Z7X_YD3MI="
     },
     {
       "id": 53,
@@ -427,7 +427,7 @@
       "price": 90,
       "category": "snacks",
       "description": "Simple veg sandwich",
-      "img": "https://i.imgur.com/53.jpg"
+      "img": "https://media.istockphoto.com/id/1328011797/photo/veg-grilled-sandwich.jpg?s=612x612&w=0&k=20&c=ypz6qjTqrrnl7jUSYgpjkMkStVicxTpwpJXbDxJS5XI="
     },
     {
       "id": 54,
@@ -435,7 +435,7 @@
       "price": 140,
       "category": "snacks",
       "description": "Chicken sandwich with veggies",
-      "img": "https://i.imgur.com/54.jpg"
+      "img": "https://media.istockphoto.com/id/1221237754/photo/two-halves-of-club-sandwich-on-white.jpg?s=612x612&w=0&k=20&c=jTThChWPJoFPxOdW1F4I-UzDqzS97iIgTm4-JJe-gOQ="
     },
     {
       "id": 55,
@@ -443,7 +443,7 @@
       "price": 80,
       "category": "snacks",
       "description": "Crispy potato fries",
-      "img": "https://i.imgur.com/55.jpg"
+      "img": "https://media.istockphoto.com/id/966934632/photo/appetizing-french-fries-in-a-bowl.jpg?s=612x612&w=0&k=20&c=6mKRNQ-PWQRQg0RAXyCQZeRZRoSzohqVWhT-SKVXd04="
     },
     {
       "id": 56,
@@ -451,7 +451,7 @@
       "price": 100,
       "category": "snacks",
       "description": "Spicy fries with peri peri",
-      "img": "https://i.imgur.com/56.jpg"
+      "img": "https://media.istockphoto.com/id/1247153020/photo/half-roasted-chicken-piri-piri-with-french-fries.jpg?s=612x612&w=0&k=20&c=cT9f3KgKU8XfajqOk9OPcYuD06LX42NYBLFKH3pj0Uc="
     },
     {
       "id": 57,
@@ -459,7 +459,7 @@
       "price": 120,
       "category": "veg",
       "description": "North Indian street food",
-      "img": "https://i.imgur.com/57.jpg"
+      "img": "https://media.istockphoto.com/id/1335023693/photo/chole-kulche.jpg?s=612x612&w=0&k=20&c=Y1HislYAUVWgwKS1QWlfc6SwDcQK4BtF99QF4IYpo00="
     },
     {
       "id": 58,
@@ -467,7 +467,7 @@
       "price": 130,
       "category": "veg",
       "description": "Comfort meal with rajma and rice",
-      "img": "https://i.imgur.com/58.jpg"
+      "img": "https://media.istockphoto.com/id/1328703894/photo/red-kidney-beans-in-a-thick-and-spicy-gravy-of-onions-and-tomatoes-served-along-with-steamed.jpg?s=612x612&w=0&k=20&c=wALnEN7mwzZV9CzHKT6hRKhivQ0WtyPwOYxiDbyytGA="
     },
     {
       "id": 59,
@@ -475,7 +475,7 @@
       "price": 140,
       "category": "veg",
       "description": "Spicy mashed veg curry",
-      "img": "https://i.imgur.com/59.jpg"
+      "img": "https://media.istockphoto.com/id/1413557034/photo/indian-mumbai-street-style-pav-bhaji-garnished-with-peas-raw-onions-coriander-and-butter.jpg?s=612x612&w=0&k=20&c=Egw7wRqIHwKPtZfJujwrTiUMQUxxLJOO0iri-jSZRHA="
     },
     {
       "id": 60,
@@ -483,7 +483,7 @@
       "price": 160,
       "category": "veg",
       "description": "Mixed veg curry in coconut gravy",
-      "img": "https://i.imgur.com/60.jpg"
+      "img": "https://media.istockphoto.com/id/1306504434/photo/mixed-veg-curry-or-kurma.jpg?s=612x612&w=0&k=20&c=wL8xE4tGsZNmRHj300fIJ-h9xAGO3iSSjM3PYgl3zV8="
     },
 
     {
@@ -492,7 +492,7 @@
       "price": 220,
       "category": "non-veg",
       "description": "Minced chicken cooked with spices",
-      "img": "https://i.imgur.com/61.jpg"
+      "img": "https://media.istockphoto.com/id/1440586341/photo/keema-curry-in-cast-iron-pan.jpg?s=612x612&w=0&k=20&c=5_MD90fbuSJxF_yw9_7ET0OLjfJQLh0halIakQLpYWM="
     },
     {
       "id": 62,
@@ -500,7 +500,7 @@
       "price": 320,
       "category": "non-veg",
       "description": "Hyderabadi style fish biryani",
-      "img": "https://i.imgur.com/62.jpg"
+      "img": "https://media.istockphoto.com/id/1334383300/photo/fish-biryani-spicy-and-delicious-malabar-biryani-or-hydrabadi-biryani-dum-biriyani.jpg?s=612x612&w=0&k=20&c=NHYmMWB3wFbILekgO0d9gEfDcOXTi-c9q-E0yT3Y9lU="
     },
     {
       "id": 63,
@@ -508,7 +508,7 @@
       "price": 160,
       "category": "chinese",
       "description": "Fried rice with scrambled eggs",
-      "img": "https://i.imgur.com/63.jpg"
+      "img": "https://media.istockphoto.com/id/1390969031/photo/close-up-asian-chicken-fried-rice-popular-take-out-food.jpg?s=612x612&w=0&k=20&c=e0PX2y2kAXYKGiayVeQzjlr7jWzvYzdZw36uvIukdHI="
     },
     {
       "id": 64,
@@ -516,7 +516,7 @@
       "price": 60,
       "category": "pizza",
       "description": "Single slice veg pizza",
-      "img": "https://i.imgur.com/64.jpg"
+      "img": "https://media.istockphoto.com/id/1066697992/photo/healthy-vegetarian-food-pizzas-with-eggplants-tomatoes-and-bell-peppers-on-oak-boards-served.jpg?s=612x612&w=0&k=20&c=8oKzGbbosQ7vdzwxOpvVOcGtsicK2PYPSgFVW9hxqJ8="
     },
     {
       "id": 65,
@@ -524,7 +524,7 @@
       "price": 80,
       "category": "pizza",
       "description": "Chicken pizza slice",
-      "img": "https://i.imgur.com/65.jpg"
+      "img": "https://media.istockphoto.com/id/489809469/photo/bbq-chicken-pizza.jpg?s=612x612&w=0&k=20&c=kB3xRU4-A7fJ9iYpIzlOqSiLX4f6OIath45yFOmqjxQ="
     },
     {
       "id": 66,
@@ -532,7 +532,7 @@
       "price": 110,
       "category": "veg",
       "description": "Crispy dosa roasted in ghee",
-      "img": "https://i.imgur.com/66.jpg"
+      "img": "https://media.istockphoto.com/id/1772807704/photo/ragi-ghee-roast-crispy-crapes-made-with-fermented-batter-of-finger-millets-and-lentils-served.jpg?s=612x612&w=0&k=20&c=9yWx0X1SmMCwonpLRlmgNJ7BjFkMkLEI_4saGENvlx8="
     },
     {
       "id": 67,
@@ -540,7 +540,7 @@
       "price": 180,
       "category": "veg",
       "description": "Full Indian thali meal",
-      "img": "https://i.imgur.com/67.jpg"
+      "img": "https://media.istockphoto.com/id/1158578874/photo/indian-hindu-veg-thali-food-platter-selective-focus.jpg?s=612x612&w=0&k=20&c=ZHAsJ9sJJoeAmwD3iU1Oo2YSKn_BG6JoE7zuG1frxwg="
     },
     {
       "id": 68,
@@ -548,7 +548,7 @@
       "price": 230,
       "category": "non-veg",
       "description": "Non-veg thali with chicken curry",
-      "img": "https://i.imgur.com/68.jpg"
+      "img": "https://media.istockphoto.com/id/2148568590/photo/bengali-non-veg-lunch-thali-with-plain-rice-vegetables-and-fish.jpg?s=612x612&w=0&k=20&c=PjmtaENOfNKxDwPQaC9R0nJcxvyK6SDWNEZ64go7s7U="
     },
     {
       "id": 69,
@@ -556,7 +556,7 @@
       "price": 250,
       "category": "chinese",
       "description": "Noodles + fried rice + chilli paneer",
-      "img": "https://i.imgur.com/69.jpg"
+      "img": "https://media.istockphoto.com/id/1144501138/photo/manchurian-hakka-schezwan-noodles-popular-indochinese-food-served-in-a-bowl-selective-focus.jpg?s=612x612&w=0&k=20&c=jFpKPWghvwUoBN88QtLMtcVybrHlUBnQOpePcew5K_g="
     },
     {
       "id": 70,
@@ -564,7 +564,7 @@
       "price": 200,
       "category": "veg",
       "description": "Thali with rice, dal, sabzi, roti",
-      "img": "https://i.imgur.com/70.jpg"
+      "img": "https://media.istockphoto.com/id/1281138457/photo/delicious-vegetarian-thali-lunch-in-a-tray.jpg?s=612x612&w=0&k=20&c=OKYcv1JbERAFKt-yOZnrQKKirzzzAm4Vg0fiA0UkRYQ="
     }
   ]
 }

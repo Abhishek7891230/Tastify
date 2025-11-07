@@ -21,6 +21,7 @@ export function CartPage() {
 
   const [showSuccess, setShowSuccess] = useState(false);
   const [orderId, setOrderId] = useState("");
+  const [isProcessing, setIsProcessing] = useState(false);
 
   const total = cart.reduce(
     (sum, item) => sum + Number(item.price) * (item.quantity || 1),
@@ -33,20 +34,27 @@ export function CartPage() {
   const handlePlaceOrder = async () => {
     if (!canPlaceOrder()) return;
 
+    setIsProcessing(true);
+
+    const cartItems = [...cart];
+
     const newOrder = placeOrder({
       total,
       deliveryFee,
       finalTotal,
     });
 
-    if (!newOrder) return;
+    if (!newOrder) {
+      setIsProcessing(false);
+      return;
+    }
 
     if (currentUser?.email) {
       try {
         await sendOrderConfirmation({
           email: currentUser.email,
           orderId: newOrder.id,
-          items: cart,
+          items: cartItems,
           finalTotal: finalTotal,
         });
       } catch (err) {
@@ -55,6 +63,7 @@ export function CartPage() {
     }
 
     setOrderId(newOrder.id);
+    setIsProcessing(false);
     setShowSuccess(true);
   };
 
@@ -62,6 +71,20 @@ export function CartPage() {
     setShowSuccess(false);
     navigate("/menu");
   };
+
+  if (isProcessing) {
+    return (
+      <div className="processing-overlay">
+        <div className="processing-content">
+          <div className="processing-spinner"></div>
+          <h2 className="processing-title">Processing your order...</h2>
+          <p className="processing-message">
+            Please wait while we confirm your order
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   if (cart.length === 0)
     return (

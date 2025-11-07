@@ -103,7 +103,7 @@ export function Navbar() {
           >
             GitHub Repo
           </a>
-          <div className="navbar-cart" onClick={handleCartClick}>
+          <div className="navbar-cart desktop-cart" onClick={handleCartClick}>
             <svg
               width="18"
               height="18"
@@ -182,7 +182,7 @@ export function Navbar() {
               )}
             </div>
           ) : (
-            <button className="navbar-btn" onClick={openLogin}>
+            <button className="navbar-btn desktop-login" onClick={openLogin}>
               Login
             </button>
           )}
@@ -221,12 +221,86 @@ export function Navbar() {
         </div>
 
         <div className={`${open ? "flex" : "hidden"} mobile-menu`}>
-          <a href="#" className="menu-link">
-            About
+          {!currentUser ? (
+            <button
+              className="mobile-menu-btn"
+              onClick={() => {
+                setOpen(false);
+                openLogin();
+              }}
+            >
+              Login
+            </button>
+          ) : (
+            <>
+              <div className="mobile-menu-user-info">
+                <div className="mobile-menu-user-name">
+                  {currentUser.displayName || "User"}
+                </div>
+                <div className="mobile-menu-user-email">{currentUser.email}</div>
+              </div>
+              <button
+                className="mobile-menu-btn"
+                onClick={() => {
+                  setOpen(false);
+                  navigate("/orders");
+                }}
+              >
+                My Orders
+              </button>
+              <button
+                className="mobile-menu-btn"
+                onClick={() => {
+                  setOpen(false);
+                  navigate("/profile");
+                }}
+              >
+                Profile
+              </button>
+            </>
+          )}
+          <button
+            className="mobile-menu-btn"
+            onClick={() => {
+              setOpen(false);
+              handleCartClick();
+            }}
+          >
+            Cart {cartQuantity > 0 && `(${cartQuantity})`}
+          </button>
+          <a
+            href="https://github.com/Abhishek7891230"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+          >
+            GitHub
           </a>
-          <a href="#" className="menu-link">
-            Contact
+          <a
+            href="https://linkedin.com/in/abhishek-poojary777"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+          >
+            LinkedIn
           </a>
+          <a
+            href="mailto:abhishekpoojar69@gmail.com"
+            onClick={() => setOpen(false)}
+          >
+            Email
+          </a>
+          {currentUser && (
+            <button
+              className="mobile-menu-btn mobile-menu-logout"
+              onClick={() => {
+                setOpen(false);
+                handleLogout();
+              }}
+            >
+              Logout
+            </button>
+          )}
         </div>
       </nav>
     </>
