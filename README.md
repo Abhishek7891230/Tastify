@@ -52,7 +52,7 @@ https://tastify-tej1.onrender.com/api/products
 
 ---
 
-## 📦 Installation & Setup (Local Development)
+## Installation & Setup
 
 ### **1. Clone the Repository**
 
